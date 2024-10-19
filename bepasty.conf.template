@@ -1,0 +1,9 @@
+STORAGE_FILESYSTEM_DIRECTORY = '/data'
+SITENAME = 'your-domain.example.com'   # i.e. your fly.dev domain
+SECRET_KEY = 'somelongrandomstringforthecookies'
+SESSION_COOKIE_SECURE = True
+DEFAULT_PERMISSIONS = 'read'
+PERMISSIONS = {
+    'onepasswordforupload': 'create,read,delete',
+    'andonepasstwordforadmin': 'admin,list,create,read,delete',
+}

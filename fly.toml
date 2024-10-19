@@ -1,0 +1,29 @@
+# fly.toml app configuration file generated for mfa-paste on 2024-10-19T22:28:45+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'mfa-paste'
+primary_region = 'ams'
+
+[build]
+  builtin = "python"
+
+[build.settings]
+  pythonbase = "3.12-slim-bookworm"
+
+[[mounts]]
+  source = "bepasty_data"
+  destination = "/data"
+  processes = ["app"]
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  size = 'shared-cpu-1x'
