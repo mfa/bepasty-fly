@@ -8,3 +8,6 @@ Steps to install:
 - run ``fly launch`` and config the app for your account (don't overwrite the Procfile!)
 - create a volume with ``flyctl volumes create bepasty_data --size 1``
 - and then deploy for real: ``flyctl deploy``
+
+
+Blog post about this: <https://madflex.de/bepasty-on-fly-io/>
