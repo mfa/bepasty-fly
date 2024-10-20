@@ -10,7 +10,7 @@ primary_region = 'ams'
   builtin = "python"
 
 [build.settings]
-  pythonbase = "3.12-slim-bookworm"
+  pythonbase = "3-slim"
 
 [[mounts]]
   source = "bepasty_data"
