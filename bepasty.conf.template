@@ -4,6 +4,6 @@ SECRET_KEY = 'somelongrandomstringforthecookies'
 SESSION_COOKIE_SECURE = True
 DEFAULT_PERMISSIONS = 'read'
 PERMISSIONS = {
-    'onepasswordforupload': 'create,read,delete',
-    'andonepasstwordforadmin': 'admin,list,create,read,delete',
+    'passwordforupload': 'create,read,delete',
+    'passwordforadmin': 'admin,list,create,read,delete',
 }
